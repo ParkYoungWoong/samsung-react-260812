@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import { fetchMovies } from '@/serverActions/movie'
 
 export interface ResponseDataSuccess {
   Response: 'True'
@@ -24,9 +25,10 @@ export default function Movies() {
   const [searchText, setSearchText] = useState('')
   const [movies, setMovies] = useState<Movie[]>([])
 
-  async function fetchMovies() {
-    const res = await fetch(`/api/movies?title=${searchText}`)
-    const data = (await res.json()) as ResponseData
+  async function searchMovies() {
+    // const res = await fetch(`/api/movies?title=${searchText}`)
+    // const data = (await res.json()) as ResponseData
+    const data = await fetchMovies(searchText)
     setMovies(data.Response === 'True' ? data.Search : [])
   }
 
@@ -38,10 +40,10 @@ export default function Movies() {
           value={searchText}
           onChange={e => setSearchText(e.target.value)}
           onKeyDown={e => {
-            if (e.key === 'Enter') fetchMovies()
+            if (e.key === 'Enter') searchMovies()
           }}
         />
-        <button onClick={() => fetchMovies()}>검색</button>
+        <button onClick={() => searchMovies()}>검색</button>
       </div>
       <ul>
         {movies.map(movie => (
