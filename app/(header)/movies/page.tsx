@@ -25,9 +25,7 @@ export default function Movies() {
   const [movies, setMovies] = useState<Movie[]>([])
 
   async function fetchMovies() {
-    const res = await fetch(
-      `https://omdbapi.com?apikey=9d38c929&s=${searchText}`
-    )
+    const res = await fetch(`/api/movies?title=${searchText}`)
     const data = (await res.json()) as ResponseData
     setMovies(data.Response === 'True' ? data.Search : [])
   }
