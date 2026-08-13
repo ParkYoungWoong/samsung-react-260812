@@ -5,7 +5,8 @@ const navigations = [
   { to: '/about', label: 'About' },
   { to: '/signin', label: 'Sign In' },
   { to: '/movies', label: 'Movies' },
-  { to: '/async', label: 'Async' }
+  { to: '/async', label: 'Async' },
+  { to: '/parallel', label: 'Parallel' }
 ]
 
 export default function Header() {
