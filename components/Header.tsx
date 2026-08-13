@@ -3,7 +3,9 @@ import Link from 'next/link'
 const navigations = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/signin', label: 'Sign In' }
+  { to: '/signin', label: 'Sign In' },
+  { to: '/movies', label: 'Movies' },
+  { to: '/async', label: 'Async' }
 ]
 
 export default function Header() {
