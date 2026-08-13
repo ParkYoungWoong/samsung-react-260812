@@ -41,7 +41,9 @@ export default async function MovieDetails({ params }: Props) {
   const { movieId } = await params
   // await new Promise(resolve => setTimeout(resolve, 3000))
   // throw new Error('알 수 없는 문제로 영화 정보를 가져올 수 없습니다.')
-  const res = await fetch(`https://omdbapi.com?apikey=9d38c929&i=${movieId}`)
+  const res = await fetch(
+    `https://omdbapi.com?apikey=${process.env.OMDB_API_KEY}&i=${movieId}`
+  )
   const movie = (await res.json()) as Movie
 
   return (
