@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface Props {
   params: Promise<{ movieId: string }>
@@ -47,12 +48,14 @@ export default async function MovieDetails({ params }: Props) {
     <>
       <h1>{movie.Title}</h1>
       <p>{movie.Plot}</p>
-      <Image
-        src={movie.Poster}
-        alt={movie.Title}
-        width={200}
-        height={300}
-      />
+      <Link href={`/poster/${movie.imdbID}`}>
+        <Image
+          src={movie.Poster}
+          alt={movie.Title}
+          width={200}
+          height={300}
+        />
+      </Link>
     </>
   )
 }
