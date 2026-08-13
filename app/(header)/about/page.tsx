@@ -1,7 +1,11 @@
+import CacheComponent from './CacheComponent'
+
 export default function About() {
   return (
     <>
-      <h1>About Page!</h1>
+      <CacheComponent>
+        <h1>About Page!</h1>
+      </CacheComponent>
     </>
   )
 }

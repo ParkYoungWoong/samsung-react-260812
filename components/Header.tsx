@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { signOut } from '@/serverActions/auth'
 
 const navigations = [
   { to: '/', label: 'Home' },
@@ -21,6 +22,9 @@ export default function Header() {
           </Link>
         )
       })}
+      <form action={signOut}>
+        <button type="submit">로그아웃</button>
+      </form>
     </header>
   )
 }

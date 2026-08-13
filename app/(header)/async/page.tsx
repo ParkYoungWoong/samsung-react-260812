@@ -1,9 +1,12 @@
+'use cache'
 import Abc from './Abc'
 import Xyz from './Xyz'
 import { Suspense } from 'react'
 import Loader from '@/components/Loader'
+import { cacheTag } from 'next/cache'
 
 export default async function Async() {
+  cacheTag('async')
   await new Promise(resolve => setTimeout(resolve, 2000))
   return (
     <>
