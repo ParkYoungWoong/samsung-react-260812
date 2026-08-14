@@ -38,6 +38,7 @@ export interface Rating {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { movieId } = await params
   const res = await fetch(
     `https://omdbapi.com?apikey=${process.env.OMDB_API_KEY}&i=${movieId}`,
     {
@@ -45,7 +46,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   )
   const movie = (await res.json()) as Movie
-  const { movieId } = await params
   return {
     title: movie.Title, // 'Spider-Man | HEROPY Next.js'
     description: movie.Plot,
