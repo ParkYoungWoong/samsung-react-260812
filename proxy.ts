@@ -2,7 +2,11 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 import { SESSION } from '@/lib/auth'
 
-const protectedRoutes = ['/dashboard', '/settings', '/movies']
+const protectedRoutes = [
+  '/dashboard',
+  '/settings'
+  // '/movies'
+]
 const guestOnlyRoutes = ['/signin', '/signup']
 
 export default function proxy(request: NextRequest) {
