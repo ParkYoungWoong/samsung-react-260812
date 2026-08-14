@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import type { Metadata } from 'next'
 
 interface Props {
   params: Promise<{ movieId: string }>
@@ -36,13 +37,39 @@ export interface Rating {
   Value: string
 }
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { movieId } = await params
+  const res = await fetch(
+    `https://omdbapi.com?apikey=${process.env.OMDB_API_KEY}&i=${movieId}`,
+    {
+      // method: 'GET',
+      cache: 'force-cache'
+    }
+  )
+  const movie = (await res.json()) as Movie
+  return {
+    title: movie.Title, // 'Spider-Man | HEROPY Next.js'
+    description: movie.Plot,
+    openGraph: {
+      type: 'website',
+      siteName: process.env.NEXT_PUBLIC_SITE_NAME,
+      title: movie.Title,
+      description: movie.Plot,
+      images: movie.Poster
+    }
+  } satisfies Metadata as Metadata
+}
+
 export default async function MovieDetails({ params }: Props) {
   // http://localhost:3000/movies/tt0111161
   const { movieId } = await params
   // await new Promise(resolve => setTimeout(resolve, 3000))
   // throw new Error('알 수 없는 문제로 영화 정보를 가져올 수 없습니다.')
   const res = await fetch(
-    `https://omdbapi.com?apikey=${process.env.OMDB_API_KEY}&i=${movieId}`
+    `https://omdbapi.com?apikey=${process.env.OMDB_API_KEY}&i=${movieId}`,
+    {
+      cache: 'force-cache'
+    }
   )
   const movie = (await res.json()) as Movie
 

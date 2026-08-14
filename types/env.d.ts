@@ -5,6 +5,7 @@ export declare global {
     interface ProcessEnv {
       OMDB_API_KEY: string
       AUTH_API_KEY: string
+      NEXT_PUBLIC_SITE_NAME: string
     }
   }
 }

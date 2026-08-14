@@ -9,7 +9,19 @@ export const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  // abc: true
+  // title: 'Next.js 연습 프로젝트',
+  title: {
+    template: `%s | ${process.env.NEXT_PUBLIC_SITE_NAME}`,
+    default: 'Next.js 연습 프로젝트(기본 제목)'
+  },
+  description: 'Next.js 연습 프로젝트',
+  openGraph: {
+    type: 'website',
+    siteName: process.env.NEXT_PUBLIC_SITE_NAME,
+    title: 'Next.js 연습 프로젝트(기본 제목)',
+    description: 'Next.js 연습 프로젝트',
+    images: 'https://heropy.dev/favicon.png'
+  }
 }
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
