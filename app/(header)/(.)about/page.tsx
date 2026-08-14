@@ -1,10 +1,10 @@
-import { revalidate } from '@/serverActions/revalidateTag'
+'use client'
+import { invalidate } from '@/serverActions/invalidateTag'
 
 export default function About() {
-  revalidate()
   return (
     <>
-      <h1>페이지를 가로챘쥬~😜</h1>
+      <h1 onClick={() => invalidate()}>페이지를 가로챘쥬~😜</h1>
     </>
   )
 }
