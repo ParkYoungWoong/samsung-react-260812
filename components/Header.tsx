@@ -6,6 +6,7 @@ const navigations = [
   { to: '/about', label: 'About' },
   { to: '/signin', label: 'Sign In' },
   { to: '/movies', label: 'Movies' },
+  { to: '/movies-infinite', label: 'Movies Infinite' },
   { to: '/async', label: 'Async' },
   { to: '/parallel', label: 'Parallel' }
 ]
