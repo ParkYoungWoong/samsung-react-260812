@@ -1,6 +1,7 @@
 import './globals.css'
 import { Roboto } from 'next/font/google'
 import type { Metadata } from 'next'
+import { QueryProvider } from '@/providers/query'
 
 export const roboto = Roboto({
   subsets: ['latin'],
@@ -29,7 +30,9 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
     <html
       lang="ko"
       className={`${roboto.className} antialiased`}>
-      <body>{children}</body>
+      <body>
+        <QueryProvider>{children}</QueryProvider>
+      </body>
     </html>
   )
 }
