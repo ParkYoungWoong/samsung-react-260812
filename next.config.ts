@@ -16,6 +16,9 @@ const nextConfig: NextConfig = {
         hostname: 'img.omdbapi.com'
       }
     ]
+  },
+  experimental: {
+    optimizePackageImports: ['./utils/index.ts']
   }
 }
 
