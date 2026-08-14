@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import type { Metadata } from 'next'
 
 interface Props {
   params: Promise<{ movieId: string }>
@@ -35,29 +34,6 @@ export interface Movie {
 export interface Rating {
   Source: string
   Value: string
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { movieId } = await params
-  const res = await fetch(
-    `https://omdbapi.com?apikey=${process.env.OMDB_API_KEY}&i=${movieId}`,
-    {
-      // method: 'GET',
-      cache: 'force-cache'
-    }
-  )
-  const movie = (await res.json()) as Movie
-  return {
-    title: movie.Title, // 'Spider-Man | HEROPY Next.js'
-    description: movie.Plot,
-    openGraph: {
-      type: 'website',
-      siteName: process.env.NEXT_PUBLIC_SITE_NAME,
-      title: movie.Title,
-      description: movie.Plot,
-      images: movie.Poster
-    }
-  } satisfies Metadata as Metadata
 }
 
 export default async function MovieDetails({ params }: Props) {

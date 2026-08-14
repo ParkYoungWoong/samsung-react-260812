@@ -1,8 +1,8 @@
 import Movies from './Movies'
-import { requireSession } from '@/lib/auth'
+// import { requireSession } from '@/lib/auth'
 
 export default async function MoviesPage() {
-  await requireSession()
+  // await requireSession()
   return (
     <>
       <h1>Movies Page!</h1>
