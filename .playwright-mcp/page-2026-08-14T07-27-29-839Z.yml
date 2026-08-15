@@ -1,0 +1,61 @@
+- generic [active] [ref=f27e1]:
+  - banner [ref=f27e2]:
+    - generic [ref=f27e3]:
+      - link "Heropy Next" [ref=f27e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f27e5]: Heropy
+        - generic [ref=f27e6]: Next
+      - navigation "주요 메뉴" [ref=f27e7]:
+        - link "Home" [ref=f27e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f27e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f27e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f27e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f27e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f27e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f27e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f27e16]
+  - generic [ref=f27e17]:
+    - generic [ref=f27e18]:
+      - generic [ref=f27e19]:
+        - generic [ref=f27e20]:
+          - heading "영화 검색" [level=1] [ref=f27e21]
+          - paragraph [ref=f27e22]: OMDb / 영문 제목
+        - textbox "영화 제목" [ref=f27e23]:
+          - /placeholder: TYPE A TITLE
+      - button "검색" [disabled] [ref=f27e24]
+    - generic [ref=f27e25]:
+      - generic [ref=f27e26]:
+        - term [ref=f27e27]: 검색어
+        - definition [ref=f27e28]: "-"
+      - generic [ref=f27e29]:
+        - term [ref=f27e30]: 전체
+        - definition [ref=f27e31]: "-"
+      - generic [ref=f27e32]:
+        - term [ref=f27e33]: 표시
+        - definition [ref=f27e34]: "-"
+      - generic [ref=f27e35]:
+        - term [ref=f27e36]: 출처
+        - definition [ref=f27e37]: OMDb
+  - generic [ref=f27e38]:
+    - paragraph [ref=f27e39]: 여기에 포스터가 깔립니다
+    - paragraph [ref=f27e40]: OMDb는 영문 제목만 받습니다.
+    - paragraph [ref=f27e41]: 눌러서 바로 검색
+    - list [ref=f27e42]:
+      - listitem [ref=f27e43]:
+        - button "Parasite" [ref=f27e44] [cursor=pointer]
+      - listitem [ref=f27e45]:
+        - button "Oldboy" [ref=f27e46] [cursor=pointer]
+      - listitem [ref=f27e47]:
+        - button "Blade Runner" [ref=f27e48] [cursor=pointer]
+      - listitem [ref=f27e49]:
+        - button "Dune" [ref=f27e50] [cursor=pointer]
+      - listitem [ref=f27e51]:
+        - button "Spider-Man" [ref=f27e52] [cursor=pointer]
+  - alert [ref=f27e53]

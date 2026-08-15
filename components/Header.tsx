@@ -1,31 +1,35 @@
 import Link from 'next/link'
+import { Suspense } from 'react'
 import { signOut } from '@/serverActions/auth'
-
-const navigations = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
-  { to: '/signin', label: 'Sign In' },
-  { to: '/movies', label: 'Movies' },
-  { to: '/movies-infinite', label: 'Movies Infinite' },
-  { to: '/async', label: 'Async' },
-  { to: '/parallel', label: 'Parallel' }
-]
+import HeaderNav, { HeaderNavFallback } from './HeaderNav'
 
 export default function Header() {
   return (
-    <header className="flex gap-3">
-      {navigations.map(nav => {
-        return (
-          <Link
-            key={nav.to}
-            href={nav.to}>
-            {nav.label}
-          </Link>
-        )
-      })}
-      <form action={signOut}>
-        <button type="submit">로그아웃</button>
-      </form>
+    <header className="sticky top-0 z-50 bg-ink text-bone">
+      <div className="flex items-stretch">
+        <Link
+          href="/"
+          className="flex shrink-0 items-center bg-bone px-4 py-3.5 text-ink">
+          <span className="display text-[1.0625rem]">Heropy</span>
+          <span className="stamp ml-2 self-end pb-[0.1rem] text-aggregate">
+            Next
+          </span>
+        </Link>
+
+        <Suspense fallback={<HeaderNavFallback />}>
+          <HeaderNav />
+        </Suspense>
+
+        <form
+          action={signOut}
+          className="shrink-0">
+          <button
+            type="submit"
+            className="stamp h-full px-4 whitespace-nowrap transition-colors duration-100 hover:bg-alert hover:text-bone">
+            로그아웃
+          </button>
+        </form>
+      </div>
     </header>
   )
 }

@@ -1,0 +1,35 @@
+[      59ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[      68ms] [LOG] [HMR] connected @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[   12082ms] [ERROR] In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <div> p 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollHandlerNew focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="movies-inf..." loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/movies-in..." tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="(header)/m...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function Movies} serverProvidedParams={null}>
+                          <Movies params={Promise} searchParams={Promise}>
+                            <section>
+>                           <p className="flex items-center justify-center gap-4 py-10">
+                              <Loader size={28} className="relative">
+                                <style>
+>                               <div
+>                                 style={{width:28,height:28,borderWidth:4,borderStyle:"solid",borderColor:"#1400ff",borderTopColor:"transp...", ...}}
+>                                 className="absolute top-0 right-0 bottom-0 left-0 m-auto relative"
+>                               >
+                              ...
+                            ...
+                      ...
+                    ...
+          ...
+ @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:1052
+[   12082ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <div> @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:1052

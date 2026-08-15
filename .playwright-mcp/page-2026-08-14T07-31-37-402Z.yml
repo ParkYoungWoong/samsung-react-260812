@@ -1,0 +1,68 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - link "Heropy Next" [ref=f9e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f9e5]: Heropy
+        - generic [ref=f9e6]: Next
+      - navigation "주요 메뉴" [ref=f9e7]:
+        - link "Home" [ref=f9e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f9e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f9e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f9e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f9e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f9e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f9e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f9e16]
+  - generic [ref=f9e17]:
+    - paragraph [ref=f9e18]: tt0145487 / movie
+    - heading "Spider-Man" [level=1] [ref=f9e19]
+    - paragraph [ref=f9e20]: 2002 / PG-13 / 121 min / Action, Adventure, Sci-Fi
+  - generic [ref=f9e21]:
+    - generic [ref=f9e22]:
+      - link [ref=f9e23] [cursor=pointer]:
+        - /url: /poster/tt0145487
+        - img "Spider-Man 포스터" [ref=f9e24]
+      - paragraph [ref=f9e25]: 눌러서 원본 포스터 보기
+    - generic [ref=f9e26]:
+      - paragraph [ref=f9e28]: After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.
+      - generic [ref=f9e29]:
+        - generic [ref=f9e30]:
+          - term [ref=f9e31]: 감독
+          - definition [ref=f9e32]: Sam Raimi
+        - generic [ref=f9e33]:
+          - term [ref=f9e34]: 각본
+          - definition [ref=f9e35]: Stan Lee, Steve Ditko, David Koepp
+        - generic [ref=f9e36]:
+          - term [ref=f9e37]: 출연
+          - definition [ref=f9e38]: Tobey Maguire, Kirsten Dunst, Willem Dafoe
+        - generic [ref=f9e39]:
+          - term [ref=f9e40]: 개봉
+          - definition [ref=f9e41]: 03 May 2002
+        - generic [ref=f9e42]:
+          - term [ref=f9e43]: 국가
+          - definition [ref=f9e44]: United States
+        - generic [ref=f9e45]:
+          - term [ref=f9e46]: 수상
+          - definition [ref=f9e47]: Nominated for 2 Oscars. 17 wins & 65 nominations total
+      - generic [ref=f9e48]:
+        - generic [ref=f9e49]:
+          - paragraph [ref=f9e50]: Internet Movie Database
+          - paragraph [ref=f9e51]: 7.4/10
+        - generic [ref=f9e52]:
+          - paragraph [ref=f9e53]: Rotten Tomatoes
+          - paragraph [ref=f9e54]: 90%
+        - generic [ref=f9e55]:
+          - paragraph [ref=f9e56]: Metacritic
+          - paragraph [ref=f9e57]: 73/100
+      - paragraph [ref=f9e58]:
+        - link "검색으로 돌아가기" [ref=f9e59] [cursor=pointer]:
+          - /url: /movies
+  - alert [ref=f9e60]

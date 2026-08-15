@@ -3,10 +3,5 @@ import Movies from './Movies'
 
 export default async function MoviesPage() {
   // await requireSession()
-  return (
-    <>
-      <h1>Movies Page!</h1>
-      <Movies />
-    </>
-  )
+  return <Movies />
 }

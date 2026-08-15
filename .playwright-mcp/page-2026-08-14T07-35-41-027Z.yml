@@ -1,0 +1,63 @@
+- generic [ref=f36e1]:
+  - banner [ref=f36e2]:
+    - generic [ref=f36e3]:
+      - link "Heropy Next" [ref=f36e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f36e5]: Heropy
+        - generic [ref=f36e6]: Next
+      - navigation "주요 메뉴" [ref=f36e7]:
+        - link "Home" [ref=f36e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f36e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f36e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f36e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f36e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f36e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f36e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f36e16]
+  - generic [ref=f36e17]:
+    - generic [ref=f36e18]:
+      - generic [ref=f36e19]:
+        - generic [ref=f36e20]:
+          - heading "영화 검색" [level=1] [ref=f36e21]
+          - paragraph [ref=f36e22]: OMDb / 영문 제목
+        - textbox "영화 제목" [active] [ref=f36e23]:
+          - /placeholder: TYPE A TITLE
+          - text: zzzqqqxxnotarealmovie
+      - button "검색" [ref=f36e24] [cursor=pointer]
+    - generic [ref=f36e25]:
+      - generic [ref=f36e26]:
+        - term [ref=f36e27]: 검색어
+        - definition [ref=f36e28]: zzzqqqxxnotarealmovie
+      - generic [ref=f36e29]:
+        - term [ref=f36e30]: 전체
+        - definition [ref=f36e31]: "-"
+      - generic [ref=f36e32]:
+        - term [ref=f36e33]: 표시
+        - definition [ref=f36e34]: "-"
+      - generic [ref=f36e35]:
+        - term [ref=f36e36]: 출처
+        - definition [ref=f36e37]: OMDb
+  - alert [ref=f36e53]
+  - paragraph [ref=f36e54]:
+    - generic [ref=f36e55]: OMDb / Movie not found!
+    - generic [ref=f36e56]: 철자를 확인하거나 다른 제목으로 검색하세요.
+  - generic [ref=f36e57]:
+    - paragraph [ref=f36e58]: 눌러서 바로 검색
+    - list [ref=f36e59]:
+      - listitem [ref=f36e60]:
+        - button "Parasite" [ref=f36e61] [cursor=pointer]
+      - listitem [ref=f36e62]:
+        - button "Oldboy" [ref=f36e63] [cursor=pointer]
+      - listitem [ref=f36e64]:
+        - button "Blade Runner" [ref=f36e65] [cursor=pointer]
+      - listitem [ref=f36e66]:
+        - button "Dune" [ref=f36e67] [cursor=pointer]
+      - listitem [ref=f36e68]:
+        - button "Spider-Man" [ref=f36e69] [cursor=pointer]

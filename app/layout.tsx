@@ -1,11 +1,22 @@
 import './globals.css'
-import { Roboto } from 'next/font/google'
+import { Archivo, Space_Mono } from 'next/font/google'
 import type { Metadata } from 'next'
 import { QueryProvider } from '@/providers/query'
 
-export const roboto = Roboto({
+// 폭(wdth) 축 하나로 덩어리/본문/이름표 세 목소리를 다 낸다.
+export const archivo = Archivo({
   subsets: ['latin'],
-  weight: ['400', '700'], // normal, bold
+  weight: 'variable',
+  axes: ['wdth'],
+  variable: '--font-archivo',
+  display: 'swap'
+})
+
+// 기계가 찍은 값 전용.
+export const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-space-mono',
   display: 'swap'
 })
 
@@ -29,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html
       lang="ko"
-      className={`${roboto.className} antialiased`}>
+      className={`${archivo.variable} ${spaceMono.variable} antialiased`}>
       <body>
         <QueryProvider>{children}</QueryProvider>
       </body>

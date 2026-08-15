@@ -1,0 +1,8 @@
+[     162ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[     207ms] [LOG] [HMR] connected @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[     214ms] [WARNING] %c%s%c Route /movies is rendering with server caches disabled. For this navigation, Component Metadata in React DevTools will not accurately reflect what is statically prerenderable and runtime prefetchable. See more info here: https://nextjs.org/docs/messages/cache-bypass-in-dev background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Prerender   @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[     314ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:4321/movies:0
+[     315ms] TypeError: Failed to fetch
+    at fetchInternal (http://localhost:4321/_next/static/chunks/node_modules_next_dist_client_1r99lve._.js:10953:12)
+    at fetchServerAction (http://localhost:4321/_next/static/chunks/node_modules_next_dist_client_1r99lve._.js:7127:38)
+[     318ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:4321/__nextjs_original-stack-frames:0

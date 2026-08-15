@@ -1,0 +1,49 @@
+- generic [active] [ref=f22e1]:
+  - banner [ref=f22e2]:
+    - generic [ref=f22e3]:
+      - link "Heropy Next" [ref=f22e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f22e5]: Heropy
+        - generic [ref=f22e6]: Next
+      - navigation "주요 메뉴" [ref=f22e7]:
+        - link "Home" [ref=f22e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f22e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f22e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f22e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f22e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f22e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f22e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f22e16]
+  - generic [ref=f22e17]:
+    - generic [ref=f22e18]:
+      - generic [ref=f22e19]:
+        - generic [ref=f22e20]:
+          - heading "영화 검색 / 무한 스크롤" [level=1] [ref=f22e21]
+          - paragraph [ref=f22e22]: OMDb / 영문 제목
+        - textbox "영화 제목" [ref=f22e23]:
+          - /placeholder: TYPE A TITLE
+      - button "검색" [disabled] [ref=f22e24]
+    - generic [ref=f22e25]:
+      - generic [ref=f22e26]:
+        - term [ref=f22e27]: 검색어
+        - definition [ref=f22e28]: "-"
+      - generic [ref=f22e29]:
+        - term [ref=f22e30]: 전체
+        - definition [ref=f22e31]: "-"
+      - generic [ref=f22e32]:
+        - term [ref=f22e33]: 불러옴
+        - definition [ref=f22e34]: "-"
+      - generic [ref=f22e35]:
+        - term [ref=f22e36]: 페이지
+        - definition [ref=f22e37]: "-"
+  - generic [ref=f22e38]:
+    - paragraph [ref=f22e39]: 스크롤이 닿는 만큼 계속 불러옵니다
+    - paragraph [ref=f22e40]: 제목을 입력하면 10개씩 이어서 깔립니다.
+  - alert [ref=f22e41]

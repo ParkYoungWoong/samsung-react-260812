@@ -17,8 +17,17 @@ export default function About() {
   return (
     <>
       <CacheComponent>
-        <h1>About Page!</h1>
+        <section className="animate-slam bg-ink px-5 pt-8 pb-7 text-bone sm:px-8">
+          <p className="stamp text-ash">use cache / cacheLife(&apos;hours&apos;)</p>
+          <h1 className="display text-title mt-4">About</h1>
+        </section>
       </CacheComponent>
+
+      <div className="px-5 py-12 sm:px-8 sm:py-16">
+        <p className="text-lede max-w-[46ch] font-medium">
+          프론트엔드 개발자이고, 강사입니다.
+        </p>
+      </div>
     </>
   )
 }
