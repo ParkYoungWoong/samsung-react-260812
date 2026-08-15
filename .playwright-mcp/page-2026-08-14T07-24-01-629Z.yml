@@ -1,0 +1,60 @@
+- generic [active] [ref=f12e1]:
+  - banner [ref=f12e2]:
+    - generic [ref=f12e3]:
+      - link "Heropy Next" [ref=f12e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f12e5]: Heropy
+        - generic [ref=f12e6]: Next
+      - navigation "주요 메뉴" [ref=f12e7]:
+        - link "Home" [ref=f12e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f12e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f12e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f12e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f12e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f12e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f12e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f12e16]
+  - generic [ref=f12e17]:
+    - paragraph [ref=f12e18]: Next.js 16 / App Router
+    - heading "Heropy Next" [level=1] [ref=f12e19]
+    - paragraph [ref=f12e20]: Next.js의 라우팅, 캐싱, 스트리밍을 하나씩 떼어 만든 연습장입니다.
+  - list [ref=f12e21]:
+    - listitem [ref=f12e22]:
+      - link [ref=f12e23] [cursor=pointer]:
+        - /url: /movies
+        - paragraph [ref=f12e24]: Movies
+        - paragraph [ref=f12e25]: 서버 액션으로 한 번에 검색하고 컨택트 시트로 깐다
+    - listitem [ref=f12e26]:
+      - link [ref=f12e27] [cursor=pointer]:
+        - /url: /movies-infinite
+        - paragraph [ref=f12e28]: Movies Infinite
+        - paragraph [ref=f12e29]: React Query 무한 스크롤로 10개씩 이어 붙인다
+    - listitem [ref=f12e30]:
+      - link [ref=f12e31] [cursor=pointer]:
+        - /url: /about
+        - paragraph [ref=f12e32]: About
+        - paragraph [ref=f12e33]: "'use cache'와 cacheLife로 결과를 붙잡아 둔다"
+    - listitem [ref=f12e34]:
+      - link [ref=f12e35] [cursor=pointer]:
+        - /url: /signin
+        - paragraph [ref=f12e36]: Sign In
+        - paragraph [ref=f12e37]: 서버 액션으로 세션을 만들고 원래 가던 곳으로 보낸다
+    - listitem [ref=f12e38]:
+      - link [ref=f12e39] [cursor=pointer]:
+        - /url: /async
+        - paragraph [ref=f12e40]: Async
+        - paragraph [ref=f12e41]: Suspense 경계마다 스트리밍으로 따로 도착한다
+    - listitem [ref=f12e42]:
+      - link [ref=f12e43] [cursor=pointer]:
+        - /url: /parallel
+        - paragraph [ref=f12e44]: Parallel
+        - paragraph [ref=f12e45]: 슬롯 하나에 페이지 여러 개를 나란히 건다
+  - paragraph [ref=f12e46]: cloneDeep 확인값 1
+  - alert [ref=f12e47]

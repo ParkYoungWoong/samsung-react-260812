@@ -1,0 +1,122 @@
+- generic [ref=f11e1]:
+  - banner [ref=f11e2]:
+    - generic [ref=f11e3]:
+      - link "Heropy Next" [ref=f11e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f11e5]: Heropy
+        - generic [ref=f11e6]: Next
+      - navigation "주요 메뉴" [ref=f11e7]:
+        - link "Home" [ref=f11e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f11e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f11e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f11e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f11e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f11e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f11e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f11e16]
+  - generic [ref=f11e17]:
+    - generic [ref=f11e18]:
+      - generic [ref=f11e19]:
+        - generic [ref=f11e20]:
+          - heading "영화 검색" [level=1] [ref=f11e21]
+          - paragraph [ref=f11e22]: OMDb / 영문 제목
+        - textbox "영화 제목" [active] [ref=f11e23]:
+          - /placeholder: TYPE A TITLE
+          - text: Batman
+      - button "검색" [ref=f11e24] [cursor=pointer]
+    - generic [ref=f11e25]:
+      - generic [ref=f11e26]:
+        - term [ref=f11e27]: 검색어
+        - definition [ref=f11e28]: Batman
+      - generic [ref=f11e29]:
+        - term [ref=f11e30]: 전체
+        - definition [ref=f11e31]: "646"
+      - generic [ref=f11e32]:
+        - term [ref=f11e33]: 표시
+        - definition [ref=f11e34]: "10"
+      - generic [ref=f11e35]:
+        - term [ref=f11e36]: 출처
+        - definition [ref=f11e37]: OMDb
+  - alert [ref=f11e53]
+  - list [ref=f11e54]:
+    - listitem [ref=f11e55]:
+      - link [ref=f11e56] [cursor=pointer]:
+        - /url: /movies/tt0372784
+        - img "Batman Begins 포스터" [ref=f11e58]
+        - generic [ref=f11e59]:
+          - paragraph [ref=f11e60]: Batman Begins
+          - paragraph [ref=f11e61]: 2005 / movie
+    - listitem [ref=f11e62]:
+      - link [ref=f11e63] [cursor=pointer]:
+        - /url: /movies/tt1877830
+        - img "The Batman 포스터" [ref=f11e65]
+        - generic [ref=f11e66]:
+          - paragraph [ref=f11e67]: The Batman
+          - paragraph [ref=f11e68]: 2022 / movie
+    - listitem [ref=f11e69]:
+      - link [ref=f11e70] [cursor=pointer]:
+        - /url: /movies/tt2975590
+        - 'img "Batman v Superman: Dawn of Justice 포스터" [ref=f11e72]'
+        - generic [ref=f11e73]:
+          - paragraph [ref=f11e74]: "Batman v Superman: Dawn of Justice"
+          - paragraph [ref=f11e75]: 2016 / movie
+    - listitem [ref=f11e76]:
+      - link [ref=f11e77] [cursor=pointer]:
+        - /url: /movies/tt0096895
+        - img "Batman 포스터" [ref=f11e79]
+        - generic [ref=f11e80]:
+          - paragraph [ref=f11e81]: Batman
+          - paragraph [ref=f11e82]: 1989 / movie
+    - listitem [ref=f11e83]:
+      - link [ref=f11e84] [cursor=pointer]:
+        - /url: /movies/tt0103776
+        - img "Batman Returns 포스터" [ref=f11e86]
+        - generic [ref=f11e87]:
+          - paragraph [ref=f11e88]: Batman Returns
+          - paragraph [ref=f11e89]: 1992 / movie
+    - listitem [ref=f11e90]:
+      - link [ref=f11e91] [cursor=pointer]:
+        - /url: /movies/tt0118688
+        - img "Batman & Robin 포스터" [ref=f11e93]
+        - generic [ref=f11e94]:
+          - paragraph [ref=f11e95]: Batman & Robin
+          - paragraph [ref=f11e96]: 1997 / movie
+    - listitem [ref=f11e97]:
+      - link [ref=f11e98] [cursor=pointer]:
+        - /url: /movies/tt0112462
+        - img "Batman Forever 포스터" [ref=f11e100]
+        - generic [ref=f11e101]:
+          - paragraph [ref=f11e102]: Batman Forever
+          - paragraph [ref=f11e103]: 1995 / movie
+    - listitem [ref=f11e104]:
+      - link [ref=f11e105] [cursor=pointer]:
+        - /url: /movies/tt4116284
+        - img "The Lego Batman Movie 포스터" [ref=f11e107]
+        - generic [ref=f11e108]:
+          - paragraph [ref=f11e109]: The Lego Batman Movie
+          - paragraph [ref=f11e110]: 2017 / movie
+    - listitem [ref=f11e111]:
+      - link [ref=f11e112] [cursor=pointer]:
+        - /url: /movies/tt0103359
+        - 'img "Batman: The Animated Series 포스터" [ref=f11e114]'
+        - generic [ref=f11e115]:
+          - paragraph [ref=f11e116]: "Batman: The Animated Series"
+          - paragraph [ref=f11e117]: 1992–1995 / series
+    - listitem [ref=f11e118]:
+      - link [ref=f11e119] [cursor=pointer]:
+        - /url: /movies/tt18689424
+        - 'img "Batman v Superman: Dawn of Justice (Ultimate Edition) 포스터" [ref=f11e121]'
+        - generic [ref=f11e122]:
+          - paragraph [ref=f11e123]: "Batman v Superman: Dawn of Justice (Ultimate Edition)"
+          - paragraph [ref=f11e124]: 2016 / movie
+  - paragraph [ref=f11e125]:
+    - generic [ref=f11e126]: 646개 중 10개
+    - link "나머지는 Movies Infinite에서" [ref=f11e127] [cursor=pointer]:
+      - /url: /movies-infinite

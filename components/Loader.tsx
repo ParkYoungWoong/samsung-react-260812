@@ -8,10 +8,11 @@ interface LoaderProps {
   className?: string
 }
 
+// 각진 사각형이 8단으로 끊어져 돈다. 이 페이지에 곡선은 없다.
 export default function Loader({
   size = 20,
-  color = '#0374FF',
-  weight = 3,
+  color = '#1400ff',
+  weight = 4,
   duration = 1,
   className = ''
 }: LoaderProps) {
@@ -22,8 +23,8 @@ export default function Loader({
     borderStyle: 'solid',
     borderColor: color,
     borderTopColor: 'transparent',
-    borderRadius: '50%',
-    animation: `loader ${duration}s infinite linear`
+    borderRadius: 0,
+    animation: `loader ${duration}s infinite steps(8, end)`
   }
 
   return (

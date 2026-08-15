@@ -1,0 +1,6 @@
+[      61ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[      70ms] [LOG] [HMR] connected @ http://localhost:4321/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[    7578ms] TypeError: Failed to fetch
+    at window.fetch (eval at <anonymous> (eval at evaluate (:311:30)), <anonymous>:10:31)
+    at fetchInternal (http://localhost:4321/_next/static/chunks/node_modules_next_dist_client_1r99lve._.js:10953:12)
+    at fetchServerAction (http://localhost:4321/_next/static/chunks/node_modules_next_dist_client_1r99lve._.js:7127:38)

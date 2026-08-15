@@ -1,0 +1,27 @@
+- generic [active] [ref=f28e1]:
+  - banner [ref=f28e2]:
+    - generic [ref=f28e3]:
+      - link "Heropy Next" [ref=f28e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f28e5]: Heropy
+        - generic [ref=f28e6]: Next
+      - navigation "주요 메뉴" [ref=f28e7]:
+        - link "Home" [ref=f28e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f28e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f28e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f28e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f28e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f28e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f28e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f28e16]
+  - generic [ref=f28e17]:
+    - paragraph [ref=f28e18]: 영화 정보
+    - paragraph [ref=f28e19]: Loading
+  - alert [ref=f28e22]

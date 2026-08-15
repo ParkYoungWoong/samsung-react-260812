@@ -1,0 +1,35 @@
+- generic [active] [ref=f14e1]:
+  - banner [ref=f14e2]:
+    - generic [ref=f14e3]:
+      - link "Heropy Next" [ref=f14e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f14e5]: Heropy
+        - generic [ref=f14e6]: Next
+      - navigation "주요 메뉴" [ref=f14e7]:
+        - link "Home" [ref=f14e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f14e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f14e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f14e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f14e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f14e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f14e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f14e16]
+  - generic [ref=f14e17]:
+    - paragraph [ref=f14e18]: Parallel routes / 슬롯
+    - heading "Parallel" [level=1] [ref=f14e19]
+    - paragraph [ref=f14e20]: 하나의 레이아웃에 슬롯을 여러 개 걸고, 각자 자기 속도로 채웁니다.
+  - generic [ref=f14e21]:
+    - generic [ref=f14e22]:
+      - paragraph [ref=f14e23]: Abc
+      - paragraph [ref=f14e24]: "@abc 슬롯 / 1000ms"
+    - generic [ref=f14e25]:
+      - paragraph [ref=f14e26]: Xyz
+      - paragraph [ref=f14e27]: "@xyz 슬롯 / 4000ms"
+  - alert [ref=f14e28]

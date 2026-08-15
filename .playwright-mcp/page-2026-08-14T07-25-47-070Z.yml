@@ -1,0 +1,129 @@
+- generic [ref=f20e1]:
+  - banner [ref=f20e2]:
+    - generic [ref=f20e3]:
+      - link "Heropy Next" [ref=f20e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f20e5]: Heropy
+        - generic [ref=f20e6]: Next
+      - navigation "주요 메뉴" [ref=f20e7]:
+        - link "Home" [ref=f20e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f20e9] [cursor=pointer]:
+          - /url: /about
+        - link "Sign In" [ref=f20e10] [cursor=pointer]:
+          - /url: /signin
+        - link "Movies" [ref=f20e11] [cursor=pointer]:
+          - /url: /movies
+        - link "Movies Infinite" [ref=f20e12] [cursor=pointer]:
+          - /url: /movies-infinite
+        - link "Async" [ref=f20e13] [cursor=pointer]:
+          - /url: /async
+        - link "Parallel" [ref=f20e14] [cursor=pointer]:
+          - /url: /parallel
+      - button "로그아웃" [ref=f20e16]
+  - generic [ref=f20e17]:
+    - generic [ref=f20e18]:
+      - generic [ref=f20e19]:
+        - generic [ref=f20e20]:
+          - heading "영화 검색 / 무한 스크롤" [level=1] [ref=f20e21]
+          - paragraph [ref=f20e22]: OMDb / 영문 제목
+        - textbox "영화 제목" [active] [ref=f20e23]:
+          - /placeholder: TYPE A TITLE
+          - text: frozen
+      - button "검색" [ref=f20e24] [cursor=pointer]
+    - generic [ref=f20e25]:
+      - generic [ref=f20e26]:
+        - term [ref=f20e27]: 검색어
+        - definition [ref=f20e28]: frozen
+      - generic [ref=f20e29]:
+        - term [ref=f20e30]: 전체
+        - definition [ref=f20e31]: "411"
+      - generic [ref=f20e32]:
+        - term [ref=f20e33]: 불러옴
+        - definition [ref=f20e34]: "10"
+      - generic [ref=f20e35]:
+        - term [ref=f20e36]: 페이지
+        - definition [ref=f20e37]: "1"
+  - list [ref=f20e42]:
+    - listitem [ref=f20e43]:
+      - link [ref=f20e44] [cursor=pointer]:
+        - /url: /movies/tt2294629
+        - img "Frozen 포스터" [ref=f20e46]
+        - generic [ref=f20e47]:
+          - paragraph [ref=f20e48]: Frozen
+          - paragraph [ref=f20e49]: 2013 / movie
+    - listitem [ref=f20e50]:
+      - link [ref=f20e51] [cursor=pointer]:
+        - /url: /movies/tt4520988
+        - img "Frozen II 포스터" [ref=f20e53]
+        - generic [ref=f20e54]:
+          - paragraph [ref=f20e55]: Frozen II
+          - paragraph [ref=f20e56]: 2019 / movie
+    - listitem [ref=f20e57]:
+      - link [ref=f20e58] [cursor=pointer]:
+        - /url: /movies/tt21235248
+        - 'img "Ghostbusters: Frozen Empire 포스터" [ref=f20e60]'
+        - generic [ref=f20e61]:
+          - paragraph [ref=f20e62]: "Ghostbusters: Frozen Empire"
+          - paragraph [ref=f20e63]: 2024 / movie
+    - listitem [ref=f20e64]:
+      - link [ref=f20e65] [cursor=pointer]:
+        - /url: /movies/tt1323045
+        - img "Frozen 포스터" [ref=f20e67]
+        - generic [ref=f20e68]:
+          - paragraph [ref=f20e69]: Frozen
+          - paragraph [ref=f20e70]: 2010 / movie
+    - listitem [ref=f20e71]:
+      - link [ref=f20e72] [cursor=pointer]:
+        - /url: /movies/tt2005374
+        - img "The Frozen Ground 포스터" [ref=f20e74]
+        - generic [ref=f20e75]:
+          - paragraph [ref=f20e76]: The Frozen Ground
+          - paragraph [ref=f20e77]: 2013 / movie
+    - listitem [ref=f20e78]:
+      - link [ref=f20e79] [cursor=pointer]:
+        - /url: /movies/tt2092588
+        - img "Frozen Planet 포스터" [ref=f20e81]
+        - generic [ref=f20e82]:
+          - paragraph [ref=f20e83]: Frozen Planet
+          - paragraph [ref=f20e84]: 2011–2012 / series
+    - listitem [ref=f20e85]:
+      - link [ref=f20e86] [cursor=pointer]:
+        - /url: /movies/tt0978759
+        - img "Frozen River 포스터" [ref=f20e88]
+        - generic [ref=f20e89]:
+          - paragraph [ref=f20e90]: Frozen River
+          - paragraph [ref=f20e91]: 2008 / movie
+    - listitem [ref=f20e92]:
+      - link [ref=f20e93] [cursor=pointer]:
+        - /url: /movies/tt4007502
+        - img "Frozen Fever 포스터" [ref=f20e95]
+        - generic [ref=f20e96]:
+          - paragraph [ref=f20e97]: Frozen Fever
+          - paragraph [ref=f20e98]: 2015 / movie
+    - listitem [ref=f20e99]:
+      - link [ref=f20e100] [cursor=pointer]:
+        - /url: /movies/tt5452780
+        - img "Olaf's Frozen Adventure 포스터" [ref=f20e102]
+        - generic [ref=f20e103]:
+          - paragraph [ref=f20e104]: Olaf's Frozen Adventure
+          - paragraph [ref=f20e105]: 2017 / movie
+    - listitem [ref=f20e106]:
+      - link [ref=f20e107] [cursor=pointer]:
+        - /url: /movies/tt0301634
+        - img "Frozen Stiff 포스터" [ref=f20e109]
+        - generic [ref=f20e110]:
+          - paragraph [ref=f20e111]: Frozen Stiff
+          - paragraph [ref=f20e112]: 2002 / movie
+  - paragraph [ref=f20e113]:
+    - generic [ref=f20e115]: 불러오는 중
+  - generic [ref=f20e121] [cursor=pointer]:
+    - button "Open issues overlay" [ref=f20e122]:
+      - generic [ref=f20e126]:
+        - generic [ref=f20e127]: "1"
+        - generic [ref=f20e128]: "2"
+      - generic [ref=f20e129]:
+        - text: Issue
+        - generic [ref=f20e130]: s
+    - button "Collapse issues badge" [ref=f20e131]
+  - alert [ref=f20e41]
